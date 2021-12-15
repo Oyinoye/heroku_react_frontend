@@ -14,7 +14,7 @@ export default function Register() {
 
   const history = useHistory();
 
-  const baseUrl = "https://rideco-grocery-app-backend.herokuapp.com/";
+  const baseUrl = "https://rideco-grocery-app-backend.herokuapp.com";
 
   const register = (e) => {
     e.preventDefault();
