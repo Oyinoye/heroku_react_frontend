@@ -16,7 +16,7 @@ export default function Home() {
   const [purchased, setPurchased] = useState(false);
   const [products, setProducts] = useRecoilState(productState);
   const [details, setDetails] = useRecoilState(userdetailState);
-  const baseUrl = "http://127.0.0.1:8000";
+  const baseUrl = "https://rideco-grocery-app-backend.herokuapp.com/";
 
   const [isOpen, setIsOpen] = useState(false);
   const [quantity, setQuantity] = useState(1);
