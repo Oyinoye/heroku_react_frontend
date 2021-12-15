@@ -1,0 +1,30 @@
+.register__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: none;
+}
+
+.login__container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login__left {
+  width: 50%;
+  height: 100vh;
+  background: rgba(251, 255, 0, 0.571);
+  background-blend-mode: overlay;
+  background-image: url(../assets/login.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.login__right {
+  width: 30%;
+  padding: 30px;
+  margin: auto;
+}

@@ -1,0 +1,126 @@
+@import "react-toastify/dist/ReactToastify.css";
+
+body {
+  margin: 0;
+  font-family: "Century gothic", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --primary-color: rgb(255, 196, 0);
+  --tertiary-color: rgb(255, 72, 0);
+  --black: black;
+  --grey: whitesmoke;
+}
+
+.head__one {
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  font-weight: bold;
+  line-height: 1.5;
+  color: var(--black);
+  margin-bottom: 30px;
+}
+
+.head__two {
+  font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+  font-weight: bold;
+  color: var(--tertiary-color);
+  line-height: 1.5;
+}
+
+.paragraph {
+  font-size: clamp(12px, 2.5vw, 15px);
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+}
+
+input {
+  background: white;
+  border: 1.5px solid #d75241;
+  padding: 15px 25px;
+  outline: none;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form__input {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form__btn {
+  margin-top: 20px;
+  padding: 20px 30px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: var(--tertiary-color);
+  transition: all 250ms;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.delete__btn {
+  margin-top: 20px;
+  padding: 20px 30px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: rgb(243, 6, 6);
+  transition: all 250ms;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.form__btn:hover {
+  background: var(--grey);
+  color: black;
+}
+.delete__btn:hover {
+  background: black;
+}
+
+.popup__button {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .login__left {
+    display: none;
+  }
+
+  .login__right {
+    width: 100% !important;
+  }
+}
