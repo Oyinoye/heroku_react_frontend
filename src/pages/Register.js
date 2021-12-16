@@ -13,8 +13,9 @@ export default function Register() {
   const [email, setEmail] = useState("");
 
   const history = useHistory();
+  
+  const baseUrl = process.env.REACT_APP_BASE_URL;
 
-  const baseUrl = "https://rideco-grocery-app-backend.herokuapp.com";
 
   const register = (e) => {
     e.preventDefault();

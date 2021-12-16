@@ -23,7 +23,7 @@ export default function Login() {
   // }
 
   const history = useHistory();
-  const baseUrl = "https://rideco-grocery-app-backend.herokuapp.com";
+  const baseUrl = process.env.REACT_APP_BASE_URL;
   const login = (e) => {
     e.preventDefault();
     axios.post(`${baseUrl}/api/v1/token/`, {

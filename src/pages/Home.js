@@ -16,15 +16,14 @@ export default function Home() {
   const [purchased, setPurchased] = useState(false);
   const [products, setProducts] = useRecoilState(productState);
   const [details, setDetails] = useRecoilState(userdetailState);
-  const baseUrl = "https://rideco-grocery-app-backend.herokuapp.com";
-
+  
   const [isOpen, setIsOpen] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const [addmodal, setAddmodal] = useState(false);
   const [clicked, setClicked] = useState(false);
   const token = useRecoilValue(jwtState);
 
- 
+  const baseUrl = process.env.REACT_APP_BASE_URL;
 
   const openModal = () => {
     setIsOpen(!isOpen);
