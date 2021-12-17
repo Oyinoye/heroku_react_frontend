@@ -80,7 +80,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .home__left {
