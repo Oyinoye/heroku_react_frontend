@@ -108,6 +108,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
 }
 
 h3 {
@@ -145,7 +146,7 @@ h3 {
 .classic {
   margin-top: 100px;
   height: 80vh;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 .icon {
@@ -243,6 +244,10 @@ h3 {
   .home__left,
   .home__right {
     width: 100%;
+  }
+
+  .home__left{
+    height: 45%;
   }
   .product__body::before {
     display: none;

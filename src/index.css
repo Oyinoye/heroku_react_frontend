@@ -9,6 +9,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   text-decoration: none;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
