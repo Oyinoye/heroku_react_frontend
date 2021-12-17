@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "./Register.css";
 import { ToastContainer, toast } from "react-toastify";
 
@@ -13,7 +13,7 @@ export default function Register() {
   const [email, setEmail] = useState("");
 
   const history = useHistory();
-  
+
   const baseUrl = process.env.REACT_APP_BASE_URL;
 
 
@@ -109,7 +109,7 @@ export default function Register() {
                 Sign up
               </button>
               <p className="paragraph">
-                Sign up and proceed to login.
+                Sign up and proceed to <Link to="/login">login</Link>.
               </p>
             </div>
           </form>

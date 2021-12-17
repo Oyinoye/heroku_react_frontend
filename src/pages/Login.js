@@ -15,13 +15,7 @@ export default function Login() {
   const [user, setUser] = useRecoilState(userState);
   const [jwt, setJwt] = useRecoilState(jwtState);
 
-  // function parseJwt(token) {
-  //     if (!token) { return; }
-  //     const base64Url = token.split('.')[1];
-  //     const base64 = base64Url.replace('-', '+').replace('_', '/');
-  //     return JSON.parse(window.atob(base64));
-  // }
-
+ 
   const history = useHistory();
   const baseUrl = process.env.REACT_APP_BASE_URL;
   const login = (e) => {

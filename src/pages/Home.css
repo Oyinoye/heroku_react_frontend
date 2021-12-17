@@ -15,7 +15,7 @@
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
-  width: clamp(320px, 40vw, 500px);
+  width: clamp(240px, 40vw, 500px);
   justify-content: space-between;
   z-index: 100;
   margin-left: 30px;
@@ -233,6 +233,8 @@ h3 {
 .delete:hover {
   transform: scale(1.15);
 }
+
+
 @media screen and (max-width: 768px) {
   .home__container {
     display: flex;
@@ -245,14 +247,28 @@ h3 {
   .product__body::before {
     display: none;
   }
+  .main__product {
+    padding: 0px, 0px;
+  }
   .product__container {
     margin-left: 12px;
+    margin-right: 12px;
+    grid-template-columns: 0.5fr 1.5fr 1fr;
+    /* width: clamp(120px, 40vw, 500px); */
+  }
+  .delete{
+    margin-left: 0px;
   }
   .icon {
     font-size: 36px;
   }
   .title {
     font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+    margin-right: 96px;
+    padding: 0px, 48px, 0px, 0px;
   }
   .desc {
     font-size: 12px;
